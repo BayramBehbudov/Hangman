@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EAEDED;
+}
+
+body>p {
+    background-color: #728ba4;
+    color: #FFFFFF;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow:
+        rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 30px;
+}
+
+.jac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#containers {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgb(220, 221, 223);
+    border-radius: 50px;
+    gap: 15px;
+}
+
+#leftContainer {
+    width: 50%;
+    background-color: rgb(220, 221, 223);
+
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow:
+            rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+
+}
+
+
+#rightContainer {
+    width: 50%;
+    height: fit-content;
+    border-radius: 20px;
+    display: flex;
+    box-shadow:
+        rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    padding-bottom: 5%;
+    padding-top: 4%;
+}
+
+#rightItems {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 19px;
+}
+
+
+#rightItems p {
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#paragraps {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#wordLetters {
+    font-size: 40px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.letter {
+    font-size: 40px;
+    margin-right: 5px;
+    animation: pop 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0) rotateY(180deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2) rotateY(90deg);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1) rotateY(0deg);
+        opacity: 1;
+    }
+}
